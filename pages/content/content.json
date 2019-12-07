@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "details":"../../components/details/details",
+    "evaluate":"../../components/evaluate/evaluate"
+  }
+}

@@ -1,0 +1,27 @@
+.shell{
+  padding: 20rpx 0 0rpx 40rpx;
+}
+
+.shell_one{
+  display: flex;
+  padding-bottom: 30rpx;
+}
+.imgs{
+  width: 100rpx;
+ height: 100rpx;
+ border-radius:50%; 
+}
+.nickname{
+  padding-left: 20rpx;
+  font-size: 35rpx;
+  color: #FDA700;
+}
+.evaluate{
+  padding-left: 20rpx;
+  font-size: 35rpx;
+  color: #999;
+  width: 600rpx;
+  overflow: hidden;
+   white-space: nowrap;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,12 @@
+<view class="shell">
+  <view class="classification"> 
+  <view class="text {{num == 1 ? 'bg':''}}" bindtap="classificationranking" data-num="1">分类</view>
+ </view>
+  <view class="Ranking">
+  <view class="text {{num == 2 ? 'bg':''}}" bindtap="classificationranking" data-num="2">排行</view>
+  </view>
+</view>
+<view>
+<classification wx:if="{{num == 1}}"></classification>
+<ranking wx:else></ranking>
+</view>

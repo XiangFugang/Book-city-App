@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/bookshelf/bookshelf",
+    "pages/bookcity/bookcity",
+    "pages/search/search",
+    "pages/help/help",
+    "pages/details/details",
+    "pages/content/content",
+    "pages/catalog/catalog",
+    "pages/read/read"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f45",
+    "navigationBarTitleText": "风落木归山",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#f45",
+    "list": [
+      {
+        "pagePath": "pages/bookshelf/bookshelf",
+        "text": "书架",
+        "selectedIconPath": "./imges/bookshelf.png",
+        "iconPath": "./imges/bookshelf.png"
+      },
+      {
+        "pagePath": "pages/bookcity/bookcity",
+        "text": "书城",
+        "selectedIconPath": "./imges/home.png",
+        "iconPath": "./imges/home.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "selectedIconPath": "./imges/search.png",
+        "iconPath": "./imges/search.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

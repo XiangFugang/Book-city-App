@@ -1,0 +1,39 @@
+<view class="Schoolboy">男生</view>
+<view wx:for="{{female}}" wx:key="index">
+  <view wx:if="{{index<6}}" class="Ranking">
+    <view class="imge">
+      <image src="https://statics.zhuishushenqi.com.{{item.cover}}" class="img"></image>
+    </view>
+    <view class="text">{{item.title}}</view>
+  </view>
+</view>
+
+<view class="Schoolboy">女生</view>
+<view wx:for="{{male}}" wx:key="index">
+  <view wx:if="{{index<6}}" class="Ranking">
+    <view class="imge">
+      <image src="https://statics.zhuishushenqi.com.{{item.cover}}" class="img"></image>
+    </view>
+    <view class="text">{{item.title}}</view>
+  </view>
+</view>
+
+<view class="Schoolboy">热门</view>
+<view wx:for="{{picture}}" wx:key="index">
+  <view wx:if="{{index<6}}" class="Ranking">
+    <view class="imge">
+      <image src="https://statics.zhuishushenqi.com.{{item.cover}}" class="img"></image>
+    </view>
+    <view class="text">{{item.title}}</view>
+  </view>
+</view>
+
+<view class="Schoolboy">出版</view>
+<view wx:for="{{epub}}" wx:key="index">
+  <view wx:if="{{index<6}}" class="Ranking">
+    <view class="imge">
+      <image src="https://statics.zhuishushenqi.com.{{item.cover}}" class="img"></image>
+    </view>
+    <view class="text">{{item.title}}</view>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+.text{
+  padding-left: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.BookBoys{
+  display: flex;
+  flex-wrap: wrap;
+}
+.BookBoys_text{
+  width: 33%;
+  height: 140rpx;
+  text-align: center;
+  border: 1rpx solid #f2f2f2;
+  border-left:none; 
+}
+.name{
+  font-size: 40rpx;
+}
+.Number{
+  color: #999;
+  font-size: 30rpx;
+}

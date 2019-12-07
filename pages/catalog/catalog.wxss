@@ -1,0 +1,14 @@
+.chapter_shell {
+  padding: 20rpx 10rpx 0 10rpx;
+  background-color: #d3fcf8;
+}
+
+.chapter_for {
+  border-bottom: 4rpx solid #999;
+}
+
+.chapter_text {
+  font-size: 35rpx;
+  color: #999;
+  line-height: 80rpx;
+}

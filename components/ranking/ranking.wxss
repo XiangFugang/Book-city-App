@@ -1,0 +1,19 @@
+.Schoolboy{
+  padding-left: 20rpx;
+}
+.Ranking{
+  display: flex;
+  padding: 20rpx 0 20rpx 20rpx;
+  border-bottom: 4rpx solid #f2f2f2;
+}
+.imge{
+  width: 50rpx;
+  height: 50rpx;
+}
+.img{
+  width: 100%;
+  height: 100%;
+}
+.text{
+  padding-left: 20rpx;
+}

@@ -1,0 +1,15 @@
+<view class="shell">
+  <view class="shell_text">大家都在搜</view>
+  <view class="huanyihuan" bindtap="getexchange">
+    <view>
+      <image src="../../imges/huanyihuan.png" class="huan_img {{text==='换一换'?'animation':''}}"></image>
+    </view>
+    <view class="huan_text">换一换</view>
+  </view>
+</view>
+<!-- 随机标签颜色 -->
+<view class='content'>
+  <block wx:for="{{arrNew}}" wx:key="key" wx:for-index="key" wx:for-item="v">
+    <view class='lab' data-key="{{key}}" style="background-color:{{randomColorArr[key]}}">{{v.word}}</view>
+  </block>
+</view>

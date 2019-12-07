@@ -1,0 +1,29 @@
+<!-- 搜索 -->
+<view class="shell">
+  <view class="weui-cell">
+    <input class="weui-input" placeholder-class="bind" placeholder="输入书名或作者名" bindinput="bindKeyInput" data-value="value" value='{{sugData}}' bindconfirm="bindconfirm"></input>
+  </view>
+</view>
+<hotwords></hotwords>
+<view class="searchhistory">
+  <view class="searchhistory_text">搜索历史</view>
+  <view class="trash">
+    <view>
+      <image src="../../imges/trash.png" class="trash_icon"></image>
+    </view>
+    <view class="trash_text">清空</view>
+  </view>
+</view>
+<view class="search">
+  <view wx:for="{{books}}" wx:key="{{index}}" class="search_for">
+    <view>
+      <image src="{{'https://statics.zhuishushenqi.com'+item.cover}}" class="search_img"></image>
+    </view>
+    <view class="search_text">
+    <view class="search_title">{{item.title}}</view>
+    <view class="search_author">{{item.author}}</view>
+    <view class="search_content">{{item.shortIntro}}</view>
+    <view class="search_Collection">最近收藏：{{item.latelyFollower}}</view>
+    </view>
+  </view>
+</view>

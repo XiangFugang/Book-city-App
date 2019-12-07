@@ -1,0 +1,53 @@
+.shell {
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx 20rpx 0 20rpx;
+}
+
+.shell_text {
+  font-size: 35rpx;
+}
+
+.huanyihuan {
+  display: flex;
+}
+
+.huan_img {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.animation {
+  -webkit-animation: circle 1s infinite linear;
+  /* 控制换一换图片旋转 */
+}
+
+@-webkit-keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.huan_text {
+  font-size: 35rpx;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 50rpx auto;
+}
+
+.lab {
+  padding: 4rpx 10rpx;
+  margin: 20rpx;
+  border-radius: 15rpx;
+  float: left;
+  color: #fff;
+  font-size: 33rpx;
+}

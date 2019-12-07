@@ -1,0 +1,16 @@
+.shell{
+  padding: 20rpx 0;
+  border-bottom: 2rpx solid #f2f2f2;
+  display: flex;
+  justify-content: space-around;
+
+}
+.shell .classification .text{
+  padding-bottom: 10rpx; 
+}
+ .bg{
+border-bottom:6rpx solid #f45;
+}
+.shell .Ranking .text{
+  padding-bottom: 10rpx;
+}

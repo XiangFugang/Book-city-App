@@ -1,0 +1,6 @@
+@import "../../lib/wxParse/wxParse.wxss";
+.wxParse-p {
+  text-indent: 2em;
+  line-height: 60rpx;
+  padding: 40rpx 20rpx 20rpx 20rpx;
+}

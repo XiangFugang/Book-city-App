@@ -1,0 +1,27 @@
+<view class="text">
+  <view wx:for="{{typeList}}" wx:key="{{index}}" class="text_for {{id===item.id?'text_color':''}}" bindtap="tocilck" data-id="{{item.id}}">
+    <view class="text_text">{{item.name}}</view>
+  </view>
+</view>
+<view class="type">
+  <view wx:for="{{getMinor.mins}}" wx:key="{{index}}" class="type_for">
+    <view class="type_text {{item=== minor?'type_color':''}}" bindtap="classification" data-minor="{{item}}">{{item}}</view>
+  </view>
+</view>
+<view class="shell">
+  <view class="shellfirst" wx:for="{{books}}" wx:key="{{index}}" bindtap="content" data-id="{{item._id}}" data-title="{{item.title}}">
+    <view class="image">
+      <image class="img" src="{{'https://statics.zhuishushenqi.com'+item.cover}}"></image>
+    </view>
+    <view class="texts">
+      <view class="texts_one">{{item.title}}</view>
+      <view class="texts_two">{{item.author}}</view>
+      <view class="texts_therr">{{item.shortIntro}}</view>
+      <view class="texts_four">
+      <view  wx:for="{{item.tags}}" wx:for-item="itemName" wx:for-index="aaa" wx:key="{{aaa}}">
+        <view wx:if="{{aaa<3}}" class="{{aaa==0? 'one':(aaa==1?'two':'therr')}}">{{itemName}}</view>
+      </view>
+      </view>
+    </view>
+  </view>
+</view>

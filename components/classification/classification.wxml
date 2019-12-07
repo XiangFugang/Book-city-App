@@ -1,0 +1,31 @@
+<view class="text">男生</view>
+<view class="BookBoys">
+  <view wx:for="{{male}}" wx:key="{{index}}" class="BookBoys_text" bindtap="cilck" data-name="{{item.name}}" data-gender="{{'male'}}">
+    <view class="name">{{item.name}}</view>
+    <view class="Number">{{item.bookCount}}本</view>
+  </view>
+</view>
+
+<view class="text">女生</view>
+<view class="BookBoys">
+  <view wx:for="{{female}}" wx:key="{{index}}" class="BookBoys_text" bindtap="cilck" data-name="{{item.name}}" data-gender="{{'female'}}">
+    <view class="name">{{item.name}}</view>
+    <view class="Number">{{item.bookCount}}本</view>
+  </view>
+</view>
+
+<view class="text">热门</view>
+<view class="BookBoys">
+  <view wx:for="{{picture}}" wx:key="{{index}}" class="BookBoys_text" bindtap="cilck" data-name="{{item.name}}">
+    <view class="name">{{item.name}}</view>
+    <view class="Number">{{item.bookCount}}本</view>
+  </view>
+</view>
+
+<view class="text">出版</view>
+<view class="BookBoys">
+  <view wx:for="{{press}}" wx:key="{{index}}" class="BookBoys_text" bindtap="cilck" data-name="{{item.name}}">
+    <view class="name">{{item.name}}</view>
+    <view class="Number">{{item.bookCount}}本</view>
+  </view>
+</view>

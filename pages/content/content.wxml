@@ -1,0 +1,58 @@
+<view class="top"></view>
+<view class="images" wx:if="{{bookdetails.cover}}">
+  <image src="{{'https://statics.zhuishushenqi.com'+ bookdetails.cover}}" class="img"></image>
+</view>
+<view class="text_title">{{bookdetails.title}}</view>
+<view class="text_author">{{bookdetails.author}}</view>
+<view class="operation">
+  <view class="start {{text === '开始阅读'?'color':''}}" bindtap="cilck" data-text="{{'开始阅读'}}">开始阅读</view>
+  <view class="join {{text === '加入书架'?'color':''}}" bindtap="cilck" data-text="{{'加入书架'}}">加入书架</view>
+</view>
+<view class="frame">
+  <view class="shell">
+    <view class="score">
+      <view wx:for="{{score}}" wx:key="{{index}}">
+        <image src="../../imges/xing.png" class="star"></image>
+      </view>
+      <view wx:for="{{star}}" wx:key="{{index}}">
+        <image src="../../imges/xingxing.png" class="star"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="textupdate">
+  <text class="update">更新至</text>
+  <text class="update chapter">{{bookdetails.lastChapter}}</text>
+</view>
+<view class="information">
+  <view class="details {{information === '详情'? 'informat':''}}" bindtap="goto" data-text="详情">详情</view>
+  <view>
+    <text class="evaluate {{information === '评价'? 'informat': ''}}" bindtap="goto" data-text="评价">评价</text>
+    <text class="starRatingCount">({{bookdetails.starRatingCount}})</text>
+  </view>
+</view>
+<view>
+  <details wx:if="{{information === '详情'}}" text="{{bookdetails.longIntro}}"></details>
+  <evaluate wx:if="{{information === '评价'}}" docse="{{docs}}"></evaluate>
+</view>
+<view class="chaptersCount">
+  <view class="chaptersCount_div">
+    <image class="Navigation_icon" src="../../imges/daohang.png"></image>
+  </view>
+  <view class="chaptersCount_text" bindtap="catalog">总目录（{{bookdetails.chaptersCount}}章）</view>
+</view>
+<view class="Recommend">
+  <view class="Recommend_text">看过这本书的人还在看</view>
+  <view class="Recommend_imgs" bindtap="relevant">
+    <image src="../../imges/huanyihuan.png" class="Recommend_img {{animation==='换一换'?'animation':''}}"></image>
+    <view class="Recommend_texte">换一换</view>
+  </view>
+</view>
+<view class="bottom">
+  <view wx:for="{{recommend}}" wx:key="{{index}}" class="bottom_for">
+    <view>
+      <image src="{{'https://statics.zhuishushenqi.com'+item.cover}}" class="bottom_img"></image>
+    </view>
+    <view class="bottom_text">{{item.title}}</view>
+  </view>
+</view>

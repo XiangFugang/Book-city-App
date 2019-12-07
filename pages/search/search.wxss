@@ -1,0 +1,87 @@
+.shell {
+  height: 88rpx;
+}
+
+.weui-cell {
+  position: relative;
+}
+
+.weui-input {
+  position: absolute;
+  top: 20rpx;
+  left: 50%;
+  margin-left: -43%;
+  width: 80%;
+  background-color: #999;
+  color: #333;
+  border-radius: 30rpx;
+  padding: 8rpx 25rpx;
+  text-align: center;
+  font-size: 35rpx;
+}
+
+.bind {
+  font-size: 35rpx;
+  color: #444;
+}
+
+.searchhistory {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20rpx;
+}
+
+.searchhistory_text {
+  font-size: 35rpx;
+  color: #999;
+}
+
+.trash {
+  display: flex;
+}
+
+.trash_icon {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.trash_text {
+  font-size: 35rpx;
+  color: #f45;
+}
+
+.search_for {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 20rpx 40rpx 20rpx;
+}
+
+.search_img {
+  width: 180rpx;
+  height: 280rpx;
+}
+.search_text{
+  padding-left: 10rpx;
+}
+.search_title{
+  font-weight: 700;
+  font-size: 37rpx;
+}
+.search_author{
+  font-size: 35rpx;
+  color: #999;
+  line-height: 48rpx;
+}
+.search_content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-size: 33rpx;
+  color: #999;
+}
+.search_Collection{
+  color: #f45;
+  font-size: 35rpx;
+}

@@ -1,0 +1,5 @@
+<view class="chapter_shell">
+  <view wx:for="{{chapters}}" wx:key="{{index}}" class="chapter_for">
+    <view class="chapter_text" bindtap="read" data-link="{{item.link}}" data-title="{{item.title}}">{{item.title}}</view>
+  </view>
+</view>

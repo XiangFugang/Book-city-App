@@ -1,0 +1,36 @@
+
+.shell{
+  padding: 0 30rpx;
+}
+
+.shell .text_tite{
+  font-size: 50rpx;
+  font-weight:700; 
+}
+.shell .text_one{
+  line-height: 90rpx;
+}
+.shell .text_tow{
+  text-indent: 2em;
+  line-height: 50rpx;
+}
+.shell .text_Three{
+
+  line-height: 90rpx;
+}
+.shell .text_Four{
+text-indent: 2em;
+line-height: 50rpx;
+}
+.text_Five{
+  line-height: 90rpx;
+}
+.text_Six{
+   line-height: 50rpx;
+}
+.text_Seven{
+  line-height: 90rpx;
+}
+.text_Eight{
+  line-height: 50rpx;
+}

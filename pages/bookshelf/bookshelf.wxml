@@ -1,0 +1,13 @@
+<view class="top">
+  <view class="map">
+    <image src="../../imges/pen.png" class="inmge"></image>
+  </view>
+  <view class="text">
+    <view class="Help" bindtap="help">帮助</view>
+    <view class="images">
+      <image src="../../imges/load.png" class="imge"></image>
+    </view>
+  </view>
+
+</view>
+<view class="texte">主人还没收藏书籍哦，快去书城收藏吧！</view>

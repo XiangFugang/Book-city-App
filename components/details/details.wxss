@@ -1,0 +1,5 @@
+.text{
+  font-size: 35rpx;
+  text-indent: 2em;
+  padding: 0 15rpx;
+}
